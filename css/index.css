@@ -133,12 +133,81 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
 .container {
   max-width: 1024px;
   margin: auto;
+  padding-top: 10px;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
 }
 nav {
-  font: Arial, "sans-serif";
+  width: 100%;
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+nav a {
+  text-decoration: none;
+  font: Helvetica, sans-serif;
+  color: gray;
+}
+@media (max-width: 500px) {
+  nav a {
+    margin-bottom: 20px;
+  }
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto 20px;
+  background: #A39A7B;
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .img-holder {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  header .img-holder {
+    width: 80%;
+  }
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+header h1 {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-size: 3.6rem;
+  color: #85D1C3;
+}
+@media (max-width: 500px) {
+  header h1 {
+    margin: 20px auto;
+    width: 25%;
+    font-size: 2.4rem;
+  }
 }
