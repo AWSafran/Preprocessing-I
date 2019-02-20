@@ -293,4 +293,13 @@ header h1 {
 .history td {
   text-align: center;
   border-right: 1px solid #64AED3;
+  background: #D1D1D1;
+  color: #64AED3;
+}
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer .contact {
+  font-size: 1.2rem;
 }
