@@ -285,5 +285,12 @@ header h1 {
   margin: 0 auto 20px;
 }
 .history tr {
-  border: 1px solid black;
+  border: 1px solid #64AED3;
+}
+.history th {
+  border-right: 1px solid #64AED3;
+}
+.history td {
+  text-align: center;
+  border-right: 1px solid #64AED3;
 }
