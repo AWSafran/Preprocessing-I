@@ -243,10 +243,13 @@ header h1 {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-table {
+.main .skills {
+  width: 45%;
+}
+.history {
   width: 95%;
   margin: 0 auto 20px;
 }
-table tr {
+.history tr {
   border: 1px solid black;
 }

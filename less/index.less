@@ -65,10 +65,17 @@ html, body {
 
 @donkey-brown: #A39A7B;
 @monte-carlo: #85D1C3;
+@table-color: #D1D1D1;
+@table-font: #64AED3;
 
 .flex-mixin(){
 	flex-direction: column;
 	align-items: center;
+}
+
+.table-mixin(){
+	background: @table-color;
+	color: @table-font;
 }
 
 .container{
@@ -184,10 +191,14 @@ header{
 		margin-bottom: 10px;
 	}
 
+	.skills{
+		width: 45%;
+	}
+
 
 }
 
-table{
+.history{
 	width: 95%;
 	margin: 0 auto 20px;
 
