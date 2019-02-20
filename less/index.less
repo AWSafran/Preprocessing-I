@@ -171,19 +171,38 @@ header{
 
 .main{
 	display: flex;
-	justify-content: space around;
+	justify-content: space-around;
 	width: 95%;
 	margin: 0 auto 20px;
 	border-top: 1px solid black;
 	border-left: 1px solid black;
 	border-right: 2px solid gray;
 	border-bottom: 2px solid gray;
+	padding: 10px 0;
+
+	.background{
+		width: 45%;
+
+		@media @mobile{
+			width: 95%;
+		}
+	}
+
+	@media @mobile{
+		.flex-mixin();
+		width: 95%;
+
+		p{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
 
 	div{
 		width: 45%;
 		margin: 0 2%;
-		padding: 10px 0;
 	}
+
 
 	h2{
 		font-size: 2rem;
@@ -193,6 +212,24 @@ header{
 
 	.skills{
 		width: 45%;
+		border: 1px solid @table-font;
+		height: 240px;
+
+
+		@media @mobile {
+			width: 95%;
+		}
+
+		tr{
+			text-align: center;
+			border: 1px solid @table-font;
+		}
+
+
+
+		td{
+			.table-mixin();
+		}
 	}
 
 

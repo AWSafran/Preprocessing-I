@@ -225,18 +225,37 @@ header h1 {
 }
 .main {
   display: flex;
-  justify-content: space around;
+  justify-content: space-around;
   width: 95%;
   margin: 0 auto 20px;
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 2px solid gray;
   border-bottom: 2px solid gray;
+  padding: 10px 0;
+}
+.main .background {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .main .background {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  .main p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .main div {
   width: 45%;
   margin: 0 2%;
-  padding: 10px 0;
 }
 .main h2 {
   font-size: 2rem;
@@ -245,6 +264,21 @@ header h1 {
 }
 .main .skills {
   width: 45%;
+  border: 1px solid #64AED3;
+  height: 240px;
+}
+@media (max-width: 500px) {
+  .main .skills {
+    width: 95%;
+  }
+}
+.main .skills tr {
+  text-align: center;
+  border: 1px solid #64AED3;
+}
+.main .skills td {
+  background: #D1D1D1;
+  color: #64AED3;
 }
 .history {
   width: 95%;
