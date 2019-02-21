@@ -1,1 +1,305 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding-top: 10px;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+nav a {
+  text-decoration: none;
+  font: Helvetica, sans-serif;
+  color: gray;
+}
+@media (max-width: 500px) {
+  nav a {
+    margin-bottom: 20px;
+  }
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto 20px;
+  background: #A39A7B;
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .img-holder {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  header .img-holder {
+    width: 80%;
+  }
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+header h1 {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-size: 3.6rem;
+  color: #85D1C3;
+}
+@media (max-width: 500px) {
+  header h1 {
+    margin: 20px auto;
+    width: 15%;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+.button {
+  width: 40%;
+  margin: 0 auto 20px;
+  text-align: center;
+  padding: 5px 25px;
+}
+.button button {
+  background: #A39A7B;
+  color: #85D1C3;
+  font-size: 2.4rem;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin: 0 auto 20px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 10px 0;
+}
+.main .background {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .main .background {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  .main p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.main div {
+  width: 45%;
+  margin: 0 2%;
+}
+.main h2 {
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.main .skills {
+  width: 45%;
+  border: 1px solid #64AED3;
+  height: 240px;
+}
+@media (max-width: 500px) {
+  .main .skills {
+    width: 95%;
+  }
+}
+.main .skills tr {
+  text-align: center;
+  border: 1px solid #64AED3;
+}
+.main .skills td {
+  background: #D1D1D1;
+  color: #64AED3;
+}
+.history {
+  width: 95%;
+  margin: 0 auto 20px;
+}
+.history tr {
+  border: 1px solid #64AED3;
+}
+.history th {
+  border-right: 1px solid #64AED3;
+}
+.history td {
+  text-align: center;
+  border-right: 1px solid #64AED3;
+  background: #D1D1D1;
+  color: #64AED3;
+}
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer .contact {
+  font-size: 1.2rem;
+}
